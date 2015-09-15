@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+<button id="btnLoad">Load data</button>
+<script src="Scripts/jquery-1.10.2.js"></script>
+<script>
+    $('#btnLoad').click(function() {
+
+        $.getJSON('/api/books/2').then(function(data) {
+            console.log(data);
+        });
+    });
+
+
+
+</script>
+</body>
+</html>
